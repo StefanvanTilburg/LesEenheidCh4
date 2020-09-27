@@ -13,9 +13,9 @@ public class LesEenheid {
     public static final double DEFAULT_DOUBLE_WAARDE = -1;
     public static final boolean DEFAULT_BOOLEAN_WAARDE = false;
     public static final double ONDERGRENS_VOLDOENDE = 5.5;
-    public String naam;     // Naam leseenheid
-    public int ects;        // aantal te behalen ects (European Credits, synoniem voor studiepunten)
-    public int studiejaar;  // Studiejaar (1, 2, 3 of 4)
+    private String naam;     // Naam leseenheid
+    private int ects;        // aantal te behalen ects (European Credits, synoniem voor studiepunten)
+    private int studiejaar;  // Studiejaar (1, 2, 3 of 4)
 
     public LesEenheid(String naam, int ects, int studiejaar) {
         this.naam = naam;

@@ -8,16 +8,16 @@ package model;
  * Doel     Class Project. Subclass van LesEenheid.
  */
 public class Project extends LesEenheid {
-    public double productCijfer;
-    public double procesCijfer;
-    public double methodenEnTechniekenCijfer;
+    private double productCijfer;
+    private double procesCijfer;
+    private double methodenEnTechniekenCijfer;
 
     public Project(double productCijfer, double procesCijfer, double methodenEnTechniekenCijfer,
                    String naam, int ects, int studiejaar) {
         super(naam, ects, studiejaar);
-        this.productCijfer = productCijfer;
-        this.procesCijfer = procesCijfer;
-        this.methodenEnTechniekenCijfer = methodenEnTechniekenCijfer;
+        this.setProductCijfer(productCijfer);
+        this.setProcesCijfer(procesCijfer);
+        this.setMethodenEnTechniekenCijfer(methodenEnTechniekenCijfer);
     }
 
     public Project(String naam, int ects, int studiejaar) {

@@ -8,11 +8,11 @@ package model;
  * Doel     Class ProfessionalSkills. Subclass van LesEenheid.
  */
 public class ProfessionalSkills extends LesEenheid {
-    public boolean gehaald;
+    private boolean gehaald;
 
     public ProfessionalSkills(boolean gehaald, String naam, int ects, int studiejaar) {
         super(naam, ects, studiejaar);
-        this.gehaald = gehaald;
+        this.setGehaald(gehaald);
     }
 
     public ProfessionalSkills(String naam, int ects, int studiejaar) {

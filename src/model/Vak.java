@@ -8,11 +8,11 @@ package model;
  * Doel     Class Vak. Subclass van LesEenheid.
  */
 public class Vak extends LesEenheid {
-    public double cijfer;
+    private double cijfer;
 
     public Vak(double cijfer, String naam, int ects, int studiejaar) {
         super(naam, ects, studiejaar);
-        this.cijfer = cijfer;
+        this.setCijfer(cijfer);
     }
 
     public Vak(String naam, int ects, int studiejaar) {
