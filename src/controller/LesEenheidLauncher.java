@@ -1,6 +1,7 @@
 package controller;
 
 import model.LesEenheid;
+import model.ProfessionalSkills;
 import model.Vak;
 
 /**
@@ -18,5 +19,10 @@ public class LesEenheidLauncher {
 
         Vak vak = new Vak(7.8, "OOP1", 3 , 1);
         System.out.println(vak);
+
+        ProfessionalSkills skill = new ProfessionalSkills(false, "Personal Skills", 2 , 1);
+        System.out.println(skill);
+        skill.setGehaald(true);
+        System.out.println(skill);
     }
 }
