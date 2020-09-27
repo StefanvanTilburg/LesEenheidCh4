@@ -2,6 +2,7 @@ package controller;
 
 import model.LesEenheid;
 import model.ProfessionalSkills;
+import model.Project;
 import model.Vak;
 
 /**
@@ -24,5 +25,9 @@ public class LesEenheidLauncher {
         System.out.println(skill);
         skill.setGehaald(true);
         System.out.println(skill);
+
+        Project project = new Project(7.4, 6.8, 8.0,
+                "Fasten Your Seatbelts", 12 , 1);
+        System.out.println(project);
     }
 }
