@@ -16,11 +16,15 @@ public class ProfessionalSkills extends LesEenheid {
     }
 
     public ProfessionalSkills(String naam, int ects, int studiejaar) {
-        super(naam, ects, studiejaar);
+        this(DEFAULT_BOOLEAN_WAARDE, naam, ects, studiejaar);
+    }
+
+    public ProfessionalSkills() {
+        this(DEFAULT_NAAM, DEFAULT_INT_WAARDE, DEFAULT_INT_WAARDE);
     }
 
     public boolean isAfgerond() {
-        return false;
+        return this.gehaald;
     }
 
     @Override

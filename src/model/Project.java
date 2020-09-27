@@ -21,11 +21,17 @@ public class Project extends LesEenheid {
     }
 
     public Project(String naam, int ects, int studiejaar) {
-        super(naam, ects, studiejaar);
+        this(DEFAULT_DOUBLE_WAARDE, DEFAULT_DOUBLE_WAARDE, DEFAULT_DOUBLE_WAARDE, naam, ects, studiejaar);
+    }
+
+    public Project() {
+        this(DEFAULT_NAAM, DEFAULT_INT_WAARDE, DEFAULT_INT_WAARDE);
     }
 
     public boolean isAfgerond() {
-        return false;
+        return (this.productCijfer >= ONDERGRENS_VOLDOENDE &&
+                this.procesCijfer >= ONDERGRENS_VOLDOENDE &&
+                this.methodenEnTechniekenCijfer >= ONDERGRENS_VOLDOENDE);
     }
 
     @Override

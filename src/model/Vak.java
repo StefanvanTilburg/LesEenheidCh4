@@ -16,11 +16,15 @@ public class Vak extends LesEenheid {
     }
 
     public Vak(String naam, int ects, int studiejaar) {
-        super(naam, ects, studiejaar);
+        this(DEFAULT_DOUBLE_WAARDE, naam, ects, studiejaar);
+    }
+
+    public Vak() {
+        this(DEFAULT_NAAM, DEFAULT_INT_WAARDE, DEFAULT_INT_WAARDE);
     }
 
     public boolean isAfgerond() {
-        return false;
+        return this.cijfer >= ONDERGRENS_VOLDOENDE;
     }
 
     @Override
